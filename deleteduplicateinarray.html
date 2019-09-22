@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Delete duplicate values in array</title>
+    </head>
+    <body>
+        <script>
+            function getunique(array){
+                var uniquearray = [];
+
+                for(var value of array){
+                    if(uniquearray.indexOf(value)=== -1){
+                        uniquearray.push(value);
+                    }
+                }
+                return uniquearray;
+            }
+
+            var names=["ashok","amara","kanna","ashok","amara","kanna"];
+            var uniquenames =getunique(names);
+            document.write(uniquenames);
+        </script>
+    </body>
+</html>
